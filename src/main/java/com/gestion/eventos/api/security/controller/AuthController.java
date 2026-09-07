@@ -1,6 +1,4 @@
-package com.gestion.eventos.api.controller;
-
-import java.util.Collections;
+package com.gestion.eventos.api.security.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,14 +12,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.gestion.eventos.api.domain.Role;
 import com.gestion.eventos.api.domain.User;
-import com.gestion.eventos.api.dto.JwtAuthResponseDto;
-import com.gestion.eventos.api.dto.LoginDto;
-import com.gestion.eventos.api.dto.RegisterDto;
 import com.gestion.eventos.api.mapper.UserMapper;
 import com.gestion.eventos.api.repository.RoleRepository;
 import com.gestion.eventos.api.repository.UserRepository;
+import com.gestion.eventos.api.security.dto.JwtAuthResponseDto;
+import com.gestion.eventos.api.security.dto.LoginDto;
+import com.gestion.eventos.api.security.dto.RegisterDto;
 import com.gestion.eventos.api.security.jwt.JwtGenerator;
 
 import lombok.RequiredArgsConstructor;
@@ -56,19 +53,13 @@ public class AuthController {
         if(userRepository.existsByUsername(registerDto.getUsername())){
             return new ResponseEntity<>("Nombre de usuario, ya existe...", HttpStatus.BAD_REQUEST);
         }
+        
         if(userRepository.existsByEmail(registerDto.getEmail())){
             return new ResponseEntity<>("Email de usuario, ya existe...", HttpStatus.BAD_REQUEST);
         }
 
         User user = userMapper.registerDtoToUser(registerDto);
         user.setPassword(passwordEncoder.encode(registerDto.getPassword()));
-
-        Role roles = roleRepository.findByName("ROLE_USER")
-                .orElseThrow( () ->
-                        new RuntimeException("Error, El rol de usuario no existe")
-                        );
-
-        user.setRoles(Collections.singleton(roles));
 
         userRepository.save(user);
 

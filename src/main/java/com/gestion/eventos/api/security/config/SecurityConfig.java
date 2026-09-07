@@ -1,4 +1,4 @@
-package com.gestion.eventos.api.security;
+package com.gestion.eventos.api.security.config;
 
 
 
@@ -43,8 +43,11 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth ->
                     auth
                         .requestMatchers("/api/v1/auth/**").permitAll()
+                        .requestMatchers("/h2-console/**").permitAll()
                         .anyRequest().authenticated()
-                );
+                )
+                    .headers(AbstractHttpConfigurer::disable); // Desactiva los encabezados de seguridad para permitir el acceso a la consola H2
+
                 // Agrega el filtro de autenticación JWT antes del filtro de autenticación de nombre de usuario y contraseña
                 // Esto asegura que cada solicitud entrante pase por el filtro JWT para verificar la validez del token antes de llegar a los controladores
                 // El filtro JwtAuthenticationFilter intercepta las solicitudes entrantes y valida el token JWT presente en la cabecera Authorization. Si el token es válido, se establece la autenticación en el contexto de seguridad, permitiendo que la solicitud continúe hacia los controladores protegidos.

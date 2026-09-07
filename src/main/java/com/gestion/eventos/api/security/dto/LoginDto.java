@@ -1,4 +1,4 @@
-package com.gestion.eventos.api.dto;
+package com.gestion.eventos.api.security.dto;
 
 import lombok.Data;
 
