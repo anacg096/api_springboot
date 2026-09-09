@@ -1,6 +1,8 @@
 package com.gestion.eventos.api.security.config;
 
 
+import java.util.Arrays;
+import java.util.Collections;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,6 +17,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import com.gestion.eventos.api.security.jwt.JwtAuthEntryPoint;
 import com.gestion.eventos.api.security.jwt.JwtAuthenticationFilter;
@@ -33,6 +38,8 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
+                // Configura CORS para permitir solicitudes desde el frontend
+                .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .csrf(AbstractHttpConfigurer::disable)
                 .exceptionHandling(exception ->
                         exception.authenticationEntryPoint(jwtAuthEntryPoint) // Configura el punto de entrada para manejar errores de autenticación
@@ -65,6 +72,35 @@ public class SecurityConfig {
             (AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
+
+     // <<<< NUEVO MÉTODO: Bean para la configuración de CORS >>>>
+    @Bean
+    public CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        // En desarrollo, permitimos todos los orígenes.
+        // EN PRODUCCIÓN, CAMBIAR ESTO POR LOS DOMINIOS ESPECÍFICOS DE TU FRONTEND (ej. "https://tumiweb.com")
+        configuration.setAllowedOrigins(Collections.singletonList("http://localhost:4200")); // O Arrays.asList("http://localhost:3000", "http://otrafuente.com")
+        // Métodos HTTP permitidos
+        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
+        // Encabezados HTTP permitidos (Authorization, Content-Type, etc.)
+        configuration.setAllowedHeaders(Collections.singletonList("*"));
+        // configuration.setAllowedHeaders(Arrays.asList(
+        //         "Authorization", 
+        //         "Content-Type", 
+        //         "Accept"
+        //     ));
+        configuration.setExposedHeaders(Arrays.asList("Authorization"));
+        // Permite enviar credenciales (como cookies o encabezados de autorización)
+        configuration.setAllowCredentials(true);
+        // Tiempo máximo en segundos que la respuesta de una pre-solicitud (preflight) puede ser cacheada por el navegador
+        configuration.setMaxAge(3600L); // 1 hora
+
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        // Aplicar esta configuración CORS a todas las rutas de nuestra API
+        source.registerCorsConfiguration("/**", configuration);
+        return source;
+    }
+
 
 
     

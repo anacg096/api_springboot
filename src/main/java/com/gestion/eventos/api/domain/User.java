@@ -3,6 +3,8 @@ package com.gestion.eventos.api.domain;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -45,8 +47,10 @@ public class User {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "event_id")
     )
+
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
+    @JsonIgnore // Evitar la serialización para prevenir problemas de recursión infinita
     private Set<Event> attendedEvents = new HashSet<>();
 
 

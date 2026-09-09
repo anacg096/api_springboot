@@ -3,17 +3,14 @@ package com.gestion.eventos.api.domain;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -28,10 +25,9 @@ import lombok.ToString;
 @Table(name = "speakers")
 public class Speaker {
 
-    @Id 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
 
     @Column(nullable = false)
     private String name;
@@ -44,5 +40,6 @@ public class Speaker {
     @ManyToMany(mappedBy = "speakers")
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
+    @JsonIgnore // Evitar la serialización para prevenir problemas de recursión infinita
     private Set<Event> events = new HashSet<>();
 }

@@ -1,5 +1,6 @@
 package com.gestion.eventos.api.controller;
 
+import java.util.List;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -33,6 +34,28 @@ public class EventController {
 
     private final IEventService eventService;
     private final EventMapper eventMapper;
+
+    @GetMapping("/problematic")
+    @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
+    public ResponseEntity<List<Event>> getAllEventsProblematic(){
+        List<Event> events = eventService.getAllEventsAndTheirDetailsProblematic();
+        return ResponseEntity.ok(events);
+    }
+
+    @GetMapping("/optimized-join-fetch")
+    @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
+    public ResponseEntity<List<Event>> getAllEventsOptimizedWithJoinFetch(){
+        List<Event> events = eventService.getAllEventsAndTheirDetailsOptimizedWithJoinFetch();
+        return ResponseEntity.ok(events);
+    }
+
+    @GetMapping("/optimized/all-details")
+    @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
+    public ResponseEntity<List<Event>> getAllEventsWithAllDetails() {
+        List<Event> events = eventService.findAllEventsWithAllDetailsOptimized();
+        return ResponseEntity.ok(events);
+    }
+
 
 
     @GetMapping
