@@ -1,0 +1,427 @@
+2026-09-10 10:15:53.034 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.0.Final
+2026-09-10 10:15:53.106 INFO  c.gestion.eventos.api.ApiApplication - Starting ApiApplication using Java 25.0.2 with PID 3628 (C:\wamp64\www\Springboot\api\target\classes started by Ana in C:\wamp64\www\Springboot\api)
+2026-09-10 10:15:53.107 DEBUG c.gestion.eventos.api.ApiApplication - Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-09-10 10:15:53.108 INFO  c.gestion.eventos.api.ApiApplication - The following 1 profile is active: "dev"
+2026-09-10 10:15:54.274 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-10 10:15:54.372 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 5 JPA repository interfaces.
+2026-09-10 10:15:55.170 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-10 10:15:55.183 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-09-10 10:15:55.186 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-10 10:15:55.187 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-10 10:15:55.819 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2649 ms
+2026-09-10 10:15:56.038 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-10 10:15:56.124 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-09-10 10:15:56.670 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-10 10:15:56.709 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-10 10:15:58.067 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3acc3ee
+2026-09-10 10:15:58.069 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-10 10:15:58.343 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://ep-gentle-hall-abp17e5w-pooler.eu-west-2.aws.neon.tech/gestioneventosdb?sslmode=require&channelBinding=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.11
+	Default catalog/schema: gestioneventosdb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-10 10:15:59.512 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-10 10:15:59.875 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-10 10:15:59.974 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-10 10:16:00.284 DEBUG c.g.e.a.s.j.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-09-10 10:16:01.017 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-09-10 10:16:01.137 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-10 10:16:01.893 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-09-10 10:16:01.918 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-10 10:16:01.927 INFO  c.gestion.eventos.api.ApiApplication - Started ApiApplication in 9.527 seconds (process running for 10.149)
+2026-09-10 10:16:02.548 WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-10 10:16:02.549 WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-10 10:21:10.036 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-10 10:21:10.036 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-10 10:21:10.038 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-09-10 10:21:11.123 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 472 ms
+2026-09-10 11:47:38.238 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-10 11:47:38.277 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-10 11:47:38.292 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-10 11:47:38.304 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-10 11:47:38.581 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-10 11:47:49.732 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.0.Final
+2026-09-10 11:47:49.787 INFO  c.gestion.eventos.api.ApiApplication - Starting ApiApplication using Java 25.0.2 with PID 12352 (C:\wamp64\www\Springboot\api\target\classes started by Ana in C:\wamp64\www\Springboot\api)
+2026-09-10 11:47:49.788 DEBUG c.gestion.eventos.api.ApiApplication - Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-09-10 11:47:49.788 INFO  c.gestion.eventos.api.ApiApplication - The following 1 profile is active: "dev"
+2026-09-10 11:47:50.812 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-10 11:47:50.891 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 5 JPA repository interfaces.
+2026-09-10 11:47:51.554 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-10 11:47:51.575 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-09-10 11:47:51.578 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-10 11:47:51.578 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-10 11:47:51.654 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1802 ms
+2026-09-10 11:47:51.851 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-10 11:47:51.931 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-09-10 11:47:52.419 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-10 11:47:52.459 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-10 11:47:53.202 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58068b40
+2026-09-10 11:47:53.203 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-10 11:47:53.442 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://ep-gentle-hall-abp17e5w-pooler.eu-west-2.aws.neon.tech/gestioneventosdb?sslmode=require&channelBinding=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.11
+	Default catalog/schema: gestioneventosdb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-10 11:47:54.591 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-10 11:47:54.881 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-10 11:47:54.963 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-10 11:47:55.217 DEBUG c.g.e.a.s.j.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-09-10 11:47:55.924 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-09-10 11:47:56.037 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-10 11:47:56.801 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-09-10 11:47:56.829 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-10 11:47:56.834 INFO  c.gestion.eventos.api.ApiApplication - Started ApiApplication in 7.682 seconds (process running for 8.149)
+2026-09-10 11:47:57.426 WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-10 11:47:57.426 WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-10 11:54:16.772 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-10 11:54:16.804 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-10 11:54:16.820 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-10 11:54:16.834 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-10 11:54:17.113 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-10 11:54:28.456 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.0.Final
+2026-09-10 11:54:28.523 INFO  c.gestion.eventos.api.ApiApplication - Starting ApiApplication using Java 25.0.2 with PID 9468 (C:\wamp64\www\Springboot\api\target\classes started by Ana in C:\wamp64\www\Springboot\api)
+2026-09-10 11:54:28.524 DEBUG c.gestion.eventos.api.ApiApplication - Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-09-10 11:54:28.526 INFO  c.gestion.eventos.api.ApiApplication - The following 1 profile is active: "dev"
+2026-09-10 11:54:29.622 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-10 11:54:29.708 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 5 JPA repository interfaces.
+2026-09-10 11:54:30.373 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-10 11:54:30.391 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-09-10 11:54:30.394 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-10 11:54:30.395 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-10 11:54:30.483 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1901 ms
+2026-09-10 11:54:30.682 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-10 11:54:30.763 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-09-10 11:54:31.294 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-10 11:54:31.358 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-10 11:54:32.142 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e671ef
+2026-09-10 11:54:32.144 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-10 11:54:32.399 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://ep-gentle-hall-abp17e5w-pooler.eu-west-2.aws.neon.tech/gestioneventosdb?sslmode=require&channelBinding=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.11
+	Default catalog/schema: gestioneventosdb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-10 11:54:33.742 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-10 11:54:34.037 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-10 11:54:34.119 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-10 11:54:34.390 DEBUG c.g.e.a.s.j.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-09-10 11:54:35.124 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-09-10 11:54:35.302 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-10 11:54:36.102 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-09-10 11:54:36.132 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-10 11:54:36.141 INFO  c.gestion.eventos.api.ApiApplication - Started ApiApplication in 8.317 seconds (process running for 8.907)
+2026-09-10 11:54:36.754 WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-10 11:54:36.754 WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-10 11:55:28.906 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-10 11:55:28.907 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-10 11:55:28.910 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-09-10 11:55:30.265 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 608 ms
+2026-09-10 12:09:25.178 INFO  c.g.e.api.controller.EventController - Recibida solicitud GET /optimized-join-fetch.
+2026-09-10 12:09:25.190 DEBUG c.g.eventos.api.service.EventService - Iniciando getAllEventsAndTheirDetailsOptimizedWithJoinFetch en el servicio.
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 1, Nombre: Evento 01: Conferencia de Tecnología 2, Categoría: Taller, Oradores: Jane Smith
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 2, Nombre: Evento 02: Conferencia de Tecnología 3, Categoría: Webinar, Oradores: John Doe
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 3, Nombre: Evento 03: Conferencia de Tecnología 4, Categoría: Conferencia, Oradores: Jane Smith
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 4, Nombre: Evento 04: Conferencia de Tecnología 5, Categoría: Taller, Oradores: John Doe
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 5, Nombre: Evento 05: Conferencia de Tecnología 1, Categoría: Webinar, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 6, Nombre: Evento 06: Conferencia de Tecnología 2, Categoría: Conferencia, Oradores: John Doe
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 7, Nombre: Evento 07: Conferencia de Tecnología 3, Categoría: Taller, Oradores: Jane Smith
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 8, Nombre: Evento 08: Conferencia de Tecnología 4, Categoría: Webinar, Oradores: John Doe
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 9, Nombre: Evento 09: Conferencia de Tecnología 5, Categoría: Conferencia, Oradores: Jane Smith
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 10, Nombre: Evento 10: Conferencia de Tecnología 1, Categoría: Taller, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 11, Nombre: Evento 11: Conferencia de Tecnología 2, Categoría: Webinar, Oradores: Jane Smith
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 12, Nombre: Evento 12: Conferencia de Tecnología 3, Categoría: Conferencia, Oradores: John Doe
+2026-09-10 12:09:25.304 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 13, Nombre: Evento 13: Conferencia de Tecnología 4, Categoría: Taller, Oradores: Jane Smith
+2026-09-10 12:09:25.307 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 14, Nombre: Evento 14: Conferencia de Tecnología 5, Categoría: Webinar, Oradores: John Doe
+2026-09-10 12:09:25.307 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 15, Nombre: Evento 15: Conferencia de Tecnología 1, Categoría: Conferencia, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.307 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 16, Nombre: Evento 16: Conferencia de Tecnología 2, Categoría: Taller, Oradores: John Doe
+2026-09-10 12:09:25.307 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 17, Nombre: Evento 17: Conferencia de Tecnología 3, Categoría: Webinar, Oradores: Jane Smith
+2026-09-10 12:09:25.307 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 18, Nombre: Evento 18: Conferencia de Tecnología 4, Categoría: Conferencia, Oradores: John Doe
+2026-09-10 12:09:25.307 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 19, Nombre: Evento 19: Conferencia de Tecnología 5, Categoría: Taller, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 20, Nombre: Evento 20: Conferencia de Tecnología 1, Categoría: Webinar, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 21, Nombre: Evento 21: Conferencia de Tecnología 2, Categoría: Conferencia, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 22, Nombre: Evento 22: Conferencia de Tecnología 3, Categoría: Taller, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 23, Nombre: Evento 23: Conferencia de Tecnología 4, Categoría: Webinar, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 24, Nombre: Evento 24: Conferencia de Tecnología 5, Categoría: Conferencia, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 25, Nombre: Evento 25: Conferencia de Tecnología 1, Categoría: Taller, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 26, Nombre: Evento 26: Conferencia de Tecnología 2, Categoría: Webinar, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 27, Nombre: Evento 27: Conferencia de Tecnología 3, Categoría: Conferencia, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 28, Nombre: Evento 28: Conferencia de Tecnología 4, Categoría: Taller, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 29, Nombre: Evento 29: Conferencia de Tecnología 5, Categoría: Webinar, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 30, Nombre: Evento 30: Conferencia de Tecnología 1, Categoría: Conferencia, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 31, Nombre: Evento 31: Conferencia de Tecnología 2, Categoría: Taller, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 32, Nombre: Evento 32: Conferencia de Tecnología 3, Categoría: Webinar, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 33, Nombre: Evento 33: Conferencia de Tecnología 4, Categoría: Conferencia, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 34, Nombre: Evento 34: Conferencia de Tecnología 5, Categoría: Taller, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 35, Nombre: Evento 35: Conferencia de Tecnología 1, Categoría: Webinar, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 36, Nombre: Evento 36: Conferencia de Tecnología 2, Categoría: Conferencia, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 37, Nombre: Evento 37: Conferencia de Tecnología 3, Categoría: Taller, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 38, Nombre: Evento 38: Conferencia de Tecnología 4, Categoría: Webinar, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 39, Nombre: Evento 39: Conferencia de Tecnología 5, Categoría: Conferencia, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 40, Nombre: Evento 40: Conferencia de Tecnología 1, Categoría: Taller, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 41, Nombre: Evento 41: Conferencia de Tecnología 2, Categoría: Webinar, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 42, Nombre: Evento 42: Conferencia de Tecnología 3, Categoría: Conferencia, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 43, Nombre: Evento 43: Conferencia de Tecnología 4, Categoría: Taller, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 44, Nombre: Evento 44: Conferencia de Tecnología 5, Categoría: Webinar, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 45, Nombre: Evento 45: Conferencia de Tecnología 1, Categoría: Conferencia, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 46, Nombre: Evento 46: Conferencia de Tecnología 2, Categoría: Taller, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 47, Nombre: Evento 47: Conferencia de Tecnología 3, Categoría: Webinar, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 48, Nombre: Evento 48: Conferencia de Tecnología 4, Categoría: Conferencia, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 49, Nombre: Evento 49: Conferencia de Tecnología 5, Categoría: Taller, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 50, Nombre: Evento 50: Conferencia de Tecnología 1, Categoría: Webinar, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 51, Nombre: Evento 51: Conferencia de Tecnología 2, Categoría: Conferencia, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 52, Nombre: Evento 52: Conferencia de Tecnología 3, Categoría: Taller, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 53, Nombre: Evento 53: Conferencia de Tecnología 4, Categoría: Webinar, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 54, Nombre: Evento 54: Conferencia de Tecnología 5, Categoría: Conferencia, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 55, Nombre: Evento 55: Conferencia de Tecnología 1, Categoría: Taller, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 56, Nombre: Evento 56: Conferencia de Tecnología 2, Categoría: Webinar, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 57, Nombre: Evento 57: Conferencia de Tecnología 3, Categoría: Conferencia, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 58, Nombre: Evento 58: Conferencia de Tecnología 4, Categoría: Taller, Oradores: John Doe
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 59, Nombre: Evento 59: Conferencia de Tecnología 5, Categoría: Webinar, Oradores: Jane Smith
+2026-09-10 12:09:25.309 DEBUG c.g.eventos.api.service.EventService - Detalles de evento (Join Fetch) - ID: 60, Nombre: Evento 60: Conferencia de Tecnología 1, Categoría: Conferencia, Oradores: Jane Smith, John Doe
+2026-09-10 12:09:25.317 DEBUG c.g.eventos.api.service.EventService - Finalizado getAllEventsAndTheirDetailsOptimizedWithJoinFetch para 60 eventos.
+2026-09-10 12:09:25.345 DEBUG c.g.e.api.controller.EventController - Devolviendo 60 eventos desde /optimized-join-fetch.
+2026-09-10 12:54:23.795 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-10 12:54:23.838 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-10 12:54:23.878 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-10 12:54:23.927 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-10 12:54:24.201 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-10 12:54:33.828 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.0.Final
+2026-09-10 12:54:33.895 INFO  c.gestion.eventos.api.ApiApplication - Starting ApiApplication using Java 25.0.2 with PID 19896 (C:\wamp64\www\Springboot\api\target\classes started by Ana in C:\wamp64\www\Springboot\api)
+2026-09-10 12:54:33.895 DEBUG c.gestion.eventos.api.ApiApplication - Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-09-10 12:54:33.896 INFO  c.gestion.eventos.api.ApiApplication - The following 1 profile is active: "dev"
+2026-09-10 12:54:34.941 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-10 12:54:35.014 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 5 JPA repository interfaces.
+2026-09-10 12:54:35.645 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-10 12:54:35.666 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-09-10 12:54:35.670 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-10 12:54:35.670 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-10 12:54:35.742 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1786 ms
+2026-09-10 12:54:35.765 ERROR o.s.b.t.s.DeferredServletContainerInitializers - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\wamp64\www\Springboot\api\target\classes\com\gestion\eventos\api\security\jwt\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtGenerator': Injection of autowired dependencies failed
+2026-09-10 12:54:35.789 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-09-10 12:54:35.806 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-09-10 12:54:35.813 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-10 12:54:35.826 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.gestion.eventos.api.ApiApplication.main(ApiApplication.java:10)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:150)
+	at org.springframework.boot.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:110)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:429)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:167)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:190)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\wamp64\www\Springboot\api\target\classes\com\gestion\eventos\api\security\jwt\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtGenerator': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:231)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:185)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:180)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:165)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.context.servlet.WebApplicationContextInitializer.initialize(WebApplicationContextInitializer.java:53)
+	at org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers.onStartup(DeferredServletContainerInitializers.java:55)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4420)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:435)
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:131)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtGenerator': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:499)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1711)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 53 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'JWT_SECRET' in value "${JWT_SECRET}" <-- "${jwt.secret}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:296)
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:129)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:96)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:286)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:257)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:959)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1679)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493)
+	... 65 common frames omitted
+2026-09-10 13:03:45.138 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.0.Final
+2026-09-10 13:03:45.190 INFO  c.gestion.eventos.api.ApiApplication - Starting ApiApplication using Java 25.0.2 with PID 21388 (C:\wamp64\www\Springboot\api\target\classes started by Ana in C:\wamp64\www\Springboot\api)
+2026-09-10 13:03:45.190 DEBUG c.gestion.eventos.api.ApiApplication - Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-09-10 13:03:45.191 INFO  c.gestion.eventos.api.ApiApplication - The following 1 profile is active: "dev"
+2026-09-10 13:03:46.180 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-10 13:03:46.258 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 5 JPA repository interfaces.
+2026-09-10 13:03:46.885 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-10 13:03:46.897 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-09-10 13:03:46.901 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-10 13:03:46.901 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-10 13:03:46.968 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1721 ms
+2026-09-10 13:03:46.988 ERROR o.s.b.t.s.DeferredServletContainerInitializers - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\wamp64\www\Springboot\api\target\classes\com\gestion\eventos\api\security\jwt\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtGenerator': Injection of autowired dependencies failed
+2026-09-10 13:03:47.018 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-09-10 13:03:47.033 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-09-10 13:03:47.041 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-10 13:03:47.057 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.gestion.eventos.api.ApiApplication.main(ApiApplication.java:10)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:150)
+	at org.springframework.boot.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:110)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:429)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:167)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:190)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\wamp64\www\Springboot\api\target\classes\com\gestion\eventos\api\security\jwt\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtGenerator': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:231)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:185)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:180)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:165)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.context.servlet.WebApplicationContextInitializer.initialize(WebApplicationContextInitializer.java:53)
+	at org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers.onStartup(DeferredServletContainerInitializers.java:55)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4420)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:435)
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:131)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtGenerator': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:499)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1711)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 53 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'JWT_SECRET' in value "${JWT_SECRET}" <-- "${jwt.secret}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:296)
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:129)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:96)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:286)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:257)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:959)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1679)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493)
+	... 65 common frames omitted
